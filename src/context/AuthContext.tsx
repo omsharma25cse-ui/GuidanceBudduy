@@ -24,8 +24,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [token, setToken] = useState<string | null>(null);
 
   useEffect(() => {
-    const savedUser = localStorage.getItem("careercompass-user");
-    const savedToken = localStorage.getItem("careercompass-token");
+    const savedUser = localStorage.getItem("guidancebuddy-user");
+    const savedToken = localStorage.getItem("guidancebuddy-token");
     if (savedUser && savedToken) {
       setUser(JSON.parse(savedUser));
       setToken(savedToken);
@@ -44,8 +44,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
       setUser(data.user);
       setToken(data.token);
-      localStorage.setItem("careercompass-user", JSON.stringify(data.user));
-      localStorage.setItem("careercompass-token", data.token);
+      localStorage.setItem("guidancebuddy-user", JSON.stringify(data.user));
+      localStorage.setItem("guidancebuddy-token", data.token);
     } catch (error: any) {
       throw error;
     }
@@ -63,8 +63,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
       setUser(data.user);
       setToken(data.token);
-      localStorage.setItem("careercompass-user", JSON.stringify(data.user));
-      localStorage.setItem("careercompass-token", data.token);
+      localStorage.setItem("guidancebuddy-user", JSON.stringify(data.user));
+      localStorage.setItem("guidancebuddy-token", data.token);
     } catch (error: any) {
       throw error;
     }
@@ -73,8 +73,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const logout = () => {
     setUser(null);
     setToken(null);
-    localStorage.removeItem("careercompass-user");
-    localStorage.removeItem("careercompass-token");
+    localStorage.removeItem("guidancebuddy-user");
+    localStorage.removeItem("guidancebuddy-token");
   };
 
   return (

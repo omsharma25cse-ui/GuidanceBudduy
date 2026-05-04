@@ -57,7 +57,7 @@ app.get('/', (req, res) => {
   const keyDiagnostic = key ? `${key.substring(0, 4)}...${key.substring(key.length - 4)}` : 'NOT FOUND';
 
   res.json({ 
-    status: 'CareerCompass Backend v3.2 - STABLE',
+    status: 'GuidanceBuddy Backend v3.2 - STABLE',
     deploy_check: 'SUPER_FALLBACK_ACTIVE',
     key_id: keyDiagnostic,
     database: mongoose.connection.readyState === 1 ? 'Healthy ✅' : 'Disconnected ❌',

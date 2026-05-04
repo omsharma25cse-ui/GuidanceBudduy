@@ -161,9 +161,7 @@ const Landing = () => {
                 {...fadeUp}
                 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-[3.5rem] font-bold leading-[1.08] tracking-tight"
               >
-                Find the exact skills you need to land your{" "}
-                <span className="text-gradient">dream job</span> — powered by{" "}
-                <span className="text-gradient">AI</span>
+                <span className="text-gradient">GuidanceBuddy</span>- Shaping your future
               </motion.h1>
 
               <motion.p {...fadeUp} className="text-muted-foreground text-lg sm:text-xl max-w-xl leading-relaxed">
@@ -343,7 +341,7 @@ const Landing = () => {
                 >
                   <img
                     src="/images/dashboard-hero.png"
-                    alt="CareerCompass Dashboard — AI-powered readiness scoring, career roadmap, and skill analytics"
+                    alt="GuidanceBuddy Dashboard — AI-powered readiness scoring, career roadmap, and skill analytics"
                     className="w-full h-auto drop-shadow-2xl"
                     loading="lazy"
                   />
@@ -470,7 +468,7 @@ const Landing = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { name: "Priya Sharma", role: "SDE at Google", text: "CareerCompass showed me exactly what skills I was missing. I went from confused to confident — and landed my dream role within 3 months.", avatar: "PS" },
+              { name: "Priya Sharma", role: "SDE at Google", text: "GuidanceBuddy showed me exactly what skills I was missing. I went from confused to confident — and landed my dream role within 3 months.", avatar: "PS" },
               { name: "Rahul Mehta", role: "Data Analyst at Amazon", text: "The roadmap feature is incredibly detailed. It felt like having a personal career mentor who actually understood my goals.", avatar: "RM" },
               { name: "Ananya Singh", role: "Frontend Dev at Razorpay", text: "I was learning randomly before — React one day, Python the next. This gave me structure and I actually finished a full learning path.", avatar: "AS" },
             ].map((t, i) => (
@@ -515,7 +513,7 @@ const Landing = () => {
             transition={{ delay: 0.1 }}
             className="text-muted-foreground text-lg"
           >
-            Join thousands of professionals who found clarity with CareerCompass.
+            Join thousands of professionals who found clarity with GuidanceBuddy.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -546,7 +544,7 @@ const Landing = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
               <span className="font-display font-bold text-lg">
-                <span className="text-foreground">Career</span><span className="text-primary">Compass</span>
+                <span className="text-foreground">Guidance</span><span className="text-primary">Buddy</span>
               </span>
               <p className="text-muted-foreground text-sm mt-2 leading-relaxed">AI-powered career intelligence platform. Know exactly what to learn for your dream career.</p>
             </div>
@@ -576,7 +574,7 @@ const Landing = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-border/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-            <span>© 2026 CareerCompass. All rights reserved.</span>
+            <span>© 2026 GuidanceBuddy. All rights reserved.</span>
             <span className="flex items-center gap-1">Built with <Sparkles size={14} className="text-primary" /> AI</span>
           </div>
         </div>
