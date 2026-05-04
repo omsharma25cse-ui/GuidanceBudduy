@@ -27,10 +27,10 @@ const stagger = {
 
 const RoadmapPreview = () => {
   const categories = [
-    { name: "Programming", progress: 72, color: "from-primary to-[hsl(217,91%,60%)]" },
-    { name: "Mathematics", progress: 45, color: "from-secondary to-emerald-400" },
-    { name: "Tools & Frameworks", progress: 58, color: "from-accent to-orange-400" },
-    { name: "Soft Skills", progress: 85, color: "from-purple-500 to-pink-500" },
+    { name: "Programming", progress: 72, color: "from-primary to-[#ff8e8b]" },
+    { name: "Mathematics", progress: 45, color: "from-secondary to-[#f7d49e]" },
+    { name: "Tools & Frameworks", progress: 58, color: "from-primary to-secondary" },
+    { name: "Soft Skills", progress: 85, color: "from-secondary to-foreground/30" },
   ];
 
   return (
@@ -152,7 +152,7 @@ const Landing = () => {
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 xl:gap-12 items-center">
             <motion.div {...stagger} initial="initial" animate="animate" className="space-y-8 lg:col-span-7 xl:col-span-7">
               <motion.div {...fadeUp}>
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs font-semibold text-white">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs font-semibold text-foreground">
                   <Sparkles size={14} className="text-accent" /> AI-Powered Career Intelligence
                 </span>
               </motion.div>
