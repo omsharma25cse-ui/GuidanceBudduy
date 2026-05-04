@@ -161,7 +161,7 @@ const Landing = () => {
                 {...fadeUp}
                 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-[3.5rem] font-bold leading-[1.08] tracking-tight"
               >
-                <span className="text-gradient">GuidanceBuddy</span>- Shaping your future
+                <span className="text-gradient">GuidanceBuddy</span><br /> Shaping your future
               </motion.h1>
 
               <motion.p {...fadeUp} className="text-muted-foreground text-lg sm:text-xl max-w-xl leading-relaxed">
